@@ -1,0 +1,91 @@
+{
+    "graphs":[
+        {
+            "name":"loss曲线",
+            "x_title":"epochs",
+            "y_title":"loss",
+            "lines":[
+                {
+                    "name":"line1 train loss",
+                    "x_axis":[1,2,3,4],
+                    "y_axis":[0.3,0.2,0.8,1]
+                },
+                {
+                    "name":"line2 val loss",
+                    "x_axis":[1,2,3,4],
+                    "y_axis":[0.8,0.7,0.6,0.5]
+                }
+            ]
+        },
+        {
+            "name":"ROC曲线",
+            "x_title":"fpr",
+            "y_title":"tpr",
+            "lines":[
+                {
+                    "name":"line1 类别1的roc曲线",
+                    "relative":[
+                        {
+                            "name":"auc",
+                            "vlaue":0.9
+                        }
+                    ],
+                    "x_axis":[0,0.1,0.2,0.3,0.4,0.5,0.9],
+                    "y_axis":[1.0,0.9,0.8,0.7,0.6,0.5,0.4]
+                },
+                {
+                    "name":"line2 类别2的roc曲线",
+                    "relative":[
+                        {
+                            "name":"auc",
+                            "vlaue":0.9
+                        }
+                    ],
+                    "x_axis":[0,0.1,0.2,0.3,0.4,0.5,0.9],
+                    "y_axis":[1.0,0.9,0.8,0.7,0.6,0.5,0.4]
+                },
+                {
+                    "name":"line3 类别3的roc曲线",
+                    "x_axis":[0,0.1,0.2,0.3,0.4,0.5,0.9],
+                    "y_axis":[1.0,0.9,0.8,0.7,0.6,0.5,0.4]
+                }
+            ]
+        },
+        {
+            "name":"PR曲线",
+            "x_title":"recall",
+            "y_title":"precision",
+            "lines":[
+                {
+                    "name":"line1 类别1的pr曲线",
+                    "relative":[
+                        {
+                            "name":"ap",
+                            "value":0.8
+                        }
+                    ],
+                    "x_axis":[0.1,0.2],
+                    "y_axis":[0.1,0.2]
+                },{
+                    "name":"line2 类别2的pr曲线",
+                    "x_axis":[0.1,0.2],
+                    "y_axis":[0.1,0.2]
+                }
+            ]  
+        }
+    ],
+    "matrixs":[
+        {
+            "name":"混淆矩阵",
+            "col_name":["cat","dog"],
+            "row_name":["cat","dog"],
+            "elements":[[0.5,0.3],[0.7,0.5]]
+        }
+    ],
+    "evaluation":[
+        {
+            "name":"accuracy",
+            "value":0.9
+        }
+    ]
+}
